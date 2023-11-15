@@ -1,0 +1,696 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+  font-family:"Poppins", sans-serif ;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primaryColor: #023047;
+  --white: #ffffff;
+  --orange: #DA722C
+}
+
+h1{
+  font-weight: 800;
+  font-family: "Raleway";
+}
+
+a{
+  text-decoration: none;
+  color: var(--white);
+}
+
+li{
+  list-style: none;
+}
+
+.BACKGROUND {
+  background-image: linear-gradient(#6F7DFB , #26308C);
+}
+nav{
+  padding: 12px 6rem 0 6rem;
+  color: var(--white); 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav h1{
+  font-size: 40px ;
+}
+
+nav ul{
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+nav li{
+  font-size: 16px;
+}
+
+nav button{
+  padding: 16px 32px 16px 32px;
+  border-radius: 20px;
+  border: none;
+  background-color: #26308C;
+  color: var(--white);
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.hamburger, .closeIcon{
+  display: none;
+}
+
+.container{
+  padding: 3rem 6rem 0 6rem;
+}
+
+.hero{
+  max-width: 72rem;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 50px;
+}
+
+.layout1, .hero-image{
+  grid-column: span 2 / span 2;
+}
+
+.layout2{
+  grid-column: span 1 / span 1 ;
+}
+
+.layout2 img{
+  width: 90%;
+}
+
+.hero h1{
+  color: var(--white);
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.hero p{
+  font-weight: 400px;
+  font-size: 14px;
+  line-height: 28px;
+  color: var(--white);
+}
+
+.hero button{
+  margin-top: 32px;
+  padding: 2px 32px;
+  color: var(--white);
+  border-radius: 28px;
+  gap: 10px;
+  background-color: var(--orange);
+  display: flex;
+  align-items: center;
+  border: 0;
+  cursor: pointer;
+}
+
+.hero .enrolled, .hero .rating{
+  background-color: var(--white);
+  text-align: center;
+  border-radius: 24px;
+  box-shadow: 6px 3px 0px 4px rgba(111, 125, 251.99);
+  -webkit-box-shadow: 6px 3px 0px 4px rgba(111, 125, 251.99);
+  -moz-box-shadow: 6px 3px 0px 4px rgba(111, 125, 251.99);
+}
+
+.hero .enrolled{
+  margin: 10rem 0;
+}
+
+.hero .enrolled h1, .hero .rating h1{
+  font-family: "Poppins";
+  color: var(--primaryColor);
+  font-size: 34px;
+  font-weight: 700;
+  margin: 0;
+  padding-bottom: 0.2rem;
+}
+.hero .enrolled p, .hero .rating p{
+  color: var(--primaryColor);
+  font-size: 14px;
+  margin: 0;
+  font-weight: 400;
+  padding: 0 0 8px 0;
+}
+
+.star{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.star img{
+  width: 35px;
+}
+
+main{
+  background-color: var(--white);
+  padding: 6rem 6rem;
+
+}
+
+main .contents{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 55px;
+  max-width: 72rem;
+}
+
+.testimonies{
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.vertical-line {
+  width: 24px;
+  min-height: 600px;
+  background: var(--primaryColor);
+  border-radius: 24px;
+  margin-left: 5rem;
+  z-index: 5;
+}
+
+.contents .testimonialOne{
+  max-width: 400px;
+  position: absolute;
+  top: 40px;
+  z-index: 10;
+  background-color: var(--white);
+  padding-top: 0;
+  border-radius: 24px;
+  box-shadow: 0px 7px 9px 3px rgba(196,191,191,0.75);
+  -webkit-box-shadow: 0px 7px 9px 3px rgba(196,191,191,0.75);
+  -moz-box-shadow: 0px 7px 9px 3px rgba(196,191,191,0.75);
+  z-index: 3;
+}
+
+.contents .testimonialTwo{
+  margin-left: 2.5rem;
+  bottom: 40px;
+  position: absolute;
+  z-index: 10;
+  background-color: var(--white);
+  padding-top: 0;
+  border-radius: 24px;
+  box-shadow: 0px 7px 9px 3px rgba(196,191,191,0.75);
+  -webkit-box-shadow: 0px 7px 9px 3px rgba(196,191,191,0.75);
+  -moz-box-shadow: 0px 7px 9px 3px rgba(196,191,191,0.75);
+}
+
+.contents .comment, .contents .comment2{
+  background-color: #6F7DFB;
+  color: white;
+  padding: 18px 28px;
+  border-radius: 24px;
+  font-family: "Raleway";
+  max-width: 320px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.contents .comment2{
+  background-color: var(--orange);
+}
+
+.contents .comment-author{
+  display: grid;
+  grid-template-columns: repeat(2,  minmax(0, 1fr) );
+  padding: 0 2rem;
+  gap: 3rem;
+}
+.contents .commentor{
+  margin-top: 3rem;
+}
+
+.contents .name{
+  color: var(--primaryColor);
+  margin: 0;
+  font-family: "Raleway";
+  font-weight: 800;
+  font-size: 20px;
+}
+.contents .title{
+  margin-top: 4px;
+  font-family: "Raleway";
+  font-size: 16px;
+}
+
+.contents .comment-author img{
+  margin: -8px 0 0 auto;
+}
+
+main .contents .testimonials h1{
+  font-size: 60px;
+  color: var(--primaryColor);
+}
+
+main .contents p{
+  font-size: 16px;
+  color: var(--primaryColor);
+  line-height: 28px;
+  width: 558px;
+}
+
+main .testimonials button{
+  margin-top: 32px;
+  padding: 16px 32px;
+  color: var(--white);
+  border-radius: 21px;;
+  background-color: var(--orange);
+  cursor: pointer;
+  border: none;
+}
+
+.course{
+  background-image: linear-gradient(#6F7DFB , #26308C);
+  padding: 48px 6rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.courses{
+  max-width: 72rem;
+}
+
+.courses h1{
+  text-align: center;
+  color: var(--white);
+  font-size: 50px;
+}
+
+.courses-image{
+  display: flex;
+  justify-content: space-between;
+}
+
+.BTN{
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+
+.BTN button{
+  margin-top: 32px;
+  padding: 12px 32px;
+  color: var(--white);
+  border-radius: 20px;
+  background-color: var(--orange);
+  cursor: pointer;
+  border: none;
+  margin-right: 10px;
+}
+.getApp{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 80px 0 70px 0;
+}
+
+.getApp h1{
+  font-weight: 800;
+  font-size: 50px;
+  color: var(--primaryColor);
+  line-height: 20px;
+}
+
+.getApp p{
+  color: var(--primaryColor);
+  font-size: 14px;
+}
+
+.appBtns{
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-top: 28px;
+}
+
+.appBtns .btn{
+  padding: 12px 42px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+}
+
+.appBtns .btn img{
+  max-width: 40px;
+}
+.appBtns .btn p{
+  color: var(--white);
+  margin-left: 12px;
+}
+
+footer{
+  background-color: #070917;
+  padding: 4rem 6rem;
+}
+
+footer h3{
+  color: var(--orange);
+  font-size: 16px;
+}
+
+footer ul{
+  padding-left: 20px;
+}
+
+footer a, footer p{
+  font-size: 14px;
+  font-weight: 200;
+  color: var(--white);
+}
+footer li{
+  margin-bottom: 10px;
+}
+
+footer .Layout{
+  max-width: 72rem;
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+}
+
+.footerLayout1{
+  grid-column: span 2 / span 2;
+}
+.footerLayout2{
+  grid-column: span 2 / span 2;
+}
+.footerLayout3{
+  grid-column: span 3 / span 3;
+}
+
+.contact{
+  margin-left: 18px;
+}
+.socialHandles{
+  display: flex;
+  gap: 24px;
+  margin-top: 10px;
+}
+
+.subscribe{
+  position: relative;
+  margin-top: 16px;
+}
+
+.subscribe input{
+  width: 100%;
+  height: 24px;
+  border: none;
+  border-radius: 6px;
+  padding: 4px;
+  outline: 0;
+  font-size: 12px;
+}
+
+.subscribe input::placeholder{
+  padding: 18px;
+  font-size: 12px;
+}
+
+.subscribe button{
+  position: absolute;
+  top: 5px;
+  right: 0;
+  color: var(--white);
+  background-color: var(--primaryColor);
+  border: 0;
+  padding: 4px 12px;
+  border-radius: 6px;
+}
+.copyright{
+  margin-top: 6px;
+}
+
+
+/* phone size */
+
+@media only screen and (max-width: 600px) {
+  .hamburger{
+    display: block;
+    cursor: pointer;
+  }
+  .openIcon{
+    display: block;
+    padding-right: 0rem;
+  }
+  nav ul{
+      display: none;
+  }
+  .btn1{
+      display: none;
+  }
+
+  .closeIcon{
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20px;
+    padding: 16px;
+}
+  nav ul{
+    display: none;
+    position: absolute;
+    background-color: #070917;
+    width: 100%;
+    margin-top: 0;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    z-index: 9999;
+  }
+  nav ul li{
+    margin-top: 50px;
+    font-size: 1.3em;
+    cursor: pointer;
+    transition: all ease 0.5s;
+    text-align: center;
+  }
+
+  nav .btn1{
+    background-color: var(--orange);
+    
+  }
+
+  nav{
+    padding: 12px 1.5rem 0 1.5rem;
+  }
+
+  .container{
+    padding: 1.5rem 0 0 1.5rem;
+  }
+
+  .hero{
+    max-width: 72rem;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0px;
+    overflow-x: hidden;
+  }
+
+  .layout1{
+    grid-column: span 3 / span 3;
+    padding-right: 1.5rem;
+  }
+
+
+  .layout2{
+    grid-column: span 1 / span 1;
+    margin-top: 5rem;
+    z-index: 50;
+  }
+
+  .hero-image{
+    grid-column: span 2 / span 2;
+    padding: 0;
+    margin-right: auto;
+    z-index: 10;
+  }
+  
+  .hero .enrolled{
+    width: 140%;
+    padding: 0 32px;
+    white-space: nowrap;
+  }
+
+  .hero .enrolled{
+    margin: 6rem 0;
+  }
+
+  .hero .rating {
+  width: 130%;
+  }
+
+
+  .hero h1{
+    font-size: 40px;
+  }
+
+  
+  .hero .enrolled{
+    display: block;
+    justify-content: start;
+    margin-bottom: 5rem;
+    width: 100%;
+  }
+
+  main{
+    padding: 3.5rem 2rem 5rem 2rem;
+  }
+  
+  main .contents{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    gap: 0px;
+    max-width: 72rem;
+    position: relative;
+  }
+  
+  .vertical-line{
+    margin-left: 3rem;
+    width: 22px;
+    min-height: 550px;
+  }
+
+  .testimonies{
+    position: relative;
+    width: 100%;
+    margin-top: 3rem;
+  }
+
+  .contents .testimonialTwo{
+    margin-left: 0;
+    bottom: 60px;
+  }
+  
+  .contents .comment-author{
+    gap: 1rem;
+    padding: 0 1rem;
+  }
+
+  .contents .name{
+    font-size: 16px;
+  }
+  .contents .title{
+    font-size: 14px;
+  }
+
+  .contents .comment-author img{
+    width: 90%;
+  }
+
+  main .contents .testimonials h1 {
+    font-size: 28px;
+    color: var(--primaryColor);
+    margin-bottom: 18px;
+  }
+
+  main .contents p{
+  line-height: 24px;
+  margin: 0px;
+  width: auto;
+  font-size: 14px;
+  }
+
+  main button{
+    position: absolute;
+    padding: 12px 32px;
+    bottom: 0;
+    right: 0;
+  }
+  .course{
+    padding: 48px 0rem;
+    overflow-x: hidden;
+  }
+  .courses h1{
+    font-size: 30px;
+    margin-bottom: 2rem;
+  }
+  .courses-image{
+    display: block;
+  }
+  .courses-image img{
+    max-width: 100%;
+  }
+
+  .design{
+    margin-bottom: 50px;
+  }
+
+   .BTN button{
+    padding: 12px 32px;
+  }
+
+  .getApp{
+    padding: 4rem 2rem 3rem 2rem;
+    margin: 0;
+  }
+  .getApp h1{
+    font-size: 30px;
+  }
+  .getApp p{
+    text-align: center;
+  }
+  .appBtns{
+    display: block;
+  }
+  .appBtns .btn{
+    margin-bottom: 20px;
+    padding: 12px 50px;
+  }
+
+  footer{
+    background-color: #070917;
+    padding: 3rem 2rem;
+  }
+
+  footer .Layout{
+    max-width: 72rem;
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    text-align: center;
+    font-size: 12px;
+  }
+
+  footer ul{
+    padding: 0;
+  }
+  .socialHandles{
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+  }
+
+  .subscribe input{
+    width: 90%;
+  }
+
+  .contact{
+    margin-left: 0;
+  }
+  .subscribe button{
+    position: relative;
+    padding: 8px 24px;
+    margin-top: 10px;
+    
+  }
+  .copyright p{
+    font-size: 12px;
+    padding-top: 28px;
+    text-align: center;
+  }
+}

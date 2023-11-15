@@ -578,12 +578,8 @@ footer .Layout{
 
   .contents .testimonialTwo{
     margin-left: 0;
-    bottom: 40px;
-    width: 100%;
-  }
-  .contents .testimonialOne{
-    width: 100%;
-    margin-bottom: 40px;
+    bottom: 60px;
+    /* width: 100%; */
   }
   
   .contents .comment-author{

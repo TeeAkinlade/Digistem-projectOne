@@ -446,32 +446,36 @@ footer .Layout{
     display: block;
     padding-right: 0rem;
   }
+
   nav ul{
       display: none;
+      margin: auto;
   }
-  .btn1{
-      display: none;
-  }
+
 
   .closeIcon{
     display: none;
     position: absolute;
+    margin-top: 2rem;
     top: 0;
     right: 0;
-    width: 20px;
+    width: 40px;
     padding: 16px;
-}
+  }
+
   nav ul{
     display: none;
-    position: absolute;
+    position: fixed;
     background-color: #070917;
     width: 100%;
-    margin-top: 0;
+    margin: auto auto auto auto;
+    padding-top: 7rem;
     right: 0;
     top: 0;
     height: 100vh;
     z-index: 9999;
   }
+  
   nav ul li{
     margin-top: 50px;
     font-size: 1.3em;
@@ -480,9 +484,11 @@ footer .Layout{
     text-align: center;
   }
 
+
   nav .btn1{
     background-color: var(--orange);
-    
+    display: block;
+    margin: 3rem auto 0 auto ;
   }
 
   nav{
@@ -534,12 +540,10 @@ footer .Layout{
   width: 130%;
   }
 
-
   .hero h1{
     font-size: 40px;
   }
 
-  
   .hero .enrolled{
     display: block;
     justify-content: start;

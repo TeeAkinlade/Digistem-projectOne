@@ -568,7 +568,7 @@ footer .Layout{
   .vertical-line{
     margin-left: 3rem;
     width: 22px;
-    min-height: 550px;
+    min-height: 600px;
   }
 
   .testimonies{
@@ -579,7 +579,7 @@ footer .Layout{
 
   .contents .testimonialTwo{
     margin-left: 0;
-    bottom: 60px;
+    bottom: 30px;
     width: 100%;
   }
   

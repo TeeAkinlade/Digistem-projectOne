@@ -196,6 +196,7 @@ main .contents{
 }
 
 .contents .testimonialTwo{
+  max-width: 400px;
   margin-left: 2.5rem;
   bottom: 40px;
   position: absolute;
@@ -579,7 +580,7 @@ footer .Layout{
   .contents .testimonialTwo{
     margin-left: 0;
     bottom: 60px;
-    /* width: 100%; */
+    width: 100%;
   }
   
   .contents .comment-author{

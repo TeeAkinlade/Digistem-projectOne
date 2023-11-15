@@ -581,6 +581,10 @@ footer .Layout{
     bottom: 60px;
     width: 100%;
   }
+  .contents .testimonialOne{
+    width: 100%;
+    margin-bottom: 40px;
+  }
   
   .contents .comment-author{
     gap: 1rem;

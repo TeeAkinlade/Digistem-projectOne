@@ -23,13 +23,18 @@ a{
   color: var(--white);
 }
 
+a:hover{
+  color: #26308C;
+}
+
 li{
   list-style: none;
 }
 
-.BACKGROUND {
+.background {
   background-image: linear-gradient(#6F7DFB , #26308C);
 }
+
 nav{
   padding: 12px 6rem 0 6rem;
   color: var(--white); 
@@ -38,8 +43,10 @@ nav{
   align-items: center;
 }
 
-nav h1{
+nav .logo{
   font-size: 40px ;
+  font-family: "Raleway";
+  font-weight: 800;
 }
 
 nav ul{
@@ -56,10 +63,18 @@ nav button{
   padding: 16px 32px 16px 32px;
   border-radius: 20px;
   border: none;
-  background-color: #26308C;
+  background: linear-gradient(to right, #11b9cf 50%, var(--primaryColor) 50%);
+  background-size: 200% 100%;
   color: var(--white);
   font-size: 16px;
   cursor: pointer;
+  background-position: right bottom;
+  transition: all .9s ease-in-out;
+}
+
+nav button:hover {
+  background-position: left bottom;
+  color: white
 }
 
 .hamburger, .closeIcon{
@@ -113,6 +128,11 @@ nav button{
   align-items: center;
   border: 0;
   cursor: pointer;
+  transition: ease-in-out 0.6s;
+}
+
+.hero button:hover{
+  transform: translateY(10px) ;
 }
 
 .hero .enrolled, .hero .rating{
@@ -273,6 +293,12 @@ main .testimonials button{
   border: none;
 }
 
+.testimonials button:hover{
+  background: var(--white);
+  color: var(--orange);
+  border: 1px solid var(--orange);
+}
+
 .course{
   background-image: linear-gradient(#6F7DFB , #26308C);
   padding: 48px 6rem;
@@ -295,13 +321,13 @@ main .testimonials button{
   justify-content: space-between;
 }
 
-.BTN{
+.Btn{
   width: 100%;
   display: flex;
   justify-content: end;
 }
 
-.BTN button{
+.Btn button{
   margin-top: 32px;
   padding: 12px 32px;
   color: var(--white);
@@ -311,6 +337,12 @@ main .testimonials button{
   border: none;
   margin-right: 10px;
 }
+
+.Btn button:hover{
+  background: var(--white);
+  color: var(--orange);
+}
+
 .getApp{
   display: flex;
   justify-content: center;
@@ -343,6 +375,12 @@ main .testimonials button{
   background-color: black;
   display: flex;
   align-items: center;
+  transition:   transform 0.5s;
+  cursor: pointer;
+}
+
+.appBtns .btn:hover{
+  transform: scale(1.1);
 }
 
 .appBtns .btn img{
@@ -372,6 +410,11 @@ footer a, footer p{
   font-weight: 200;
   color: var(--white);
 }
+
+footer a:hover{
+  color: #8d8b8b;
+}
+
 footer li{
   margin-bottom: 10px;
 }
@@ -399,6 +442,14 @@ footer .Layout{
   display: flex;
   gap: 24px;
   margin-top: 10px;
+}
+
+.socialHandles img{
+  transition:  all ease 0.5s;
+}
+
+.socialHandles img:hover{
+  transform: translateY(10px);
 }
 
 .subscribe{
@@ -430,7 +481,14 @@ footer .Layout{
   border: 0;
   padding: 4px 12px;
   border-radius: 6px;
+  cursor: pointer;
 }
+
+.subscribe button:hover{
+  background-color: #185777;
+}
+
+
 .copyright{
   margin-top: 6px;
 }
@@ -637,7 +695,7 @@ footer .Layout{
     margin-bottom: 50px;
   }
 
-   .BTN button{
+   .Btn button{
     padding: 12px 32px;
   }
 
